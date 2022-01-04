@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Pacotes>
+@{
+    ViewData["Title"] = "Promoções";
+}
+
+<div class="d-flex flex-column justify-content-between fluidBackground bgForDiscounts">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top shadow-sm" data-aos="fade-down" data-aos-duration="100" data-aos-offset="0">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><strong>&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                    <path d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z" fill="currentColor"></path>
+                </svg><strong>&nbsp; &nbsp;Traveller Co.</strong></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Destinos">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Promocoes">Promoções</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contato">Contato</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Dashboard" asp-action="Index">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-sm-end text-md-end text-lg-end text-xl-end text-xxl-end text-white d-lg-flex my-auto justify-content-lg-center flash animated" style="width: 50%;position: relative;left: 50%;font-size: 8vmin;text-shadow: 0px 0px 1px var(--bs-orange), 0px 2px 4px rgba(143,142,139,0.88);color: rgb(255,255,255) !important;">Promoções</h1>
+    <div class="container-fluid text-center" style="display: flex;flex-flow: column;">
+        <h2 data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1650" style="color: #F78B28;"><strong>O melhor custo-benefício?</strong><br><strong>Somente a melhor pode oferecer. Confira!</strong></h2><button class="btn btn-primary border rounded-circle border-light shadow" data-aos="zoom-in-up" data-aos-offset="700" id="toTop" type="button" onclick="location.href = &#39;#&#39;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                <path d="M17.6568 8.96219L16.2393 10.3731L12.9843 7.10285L12.9706 20.7079L10.9706 20.7059L10.9843 7.13806L7.75404 10.3532L6.34314 8.93572L12.0132 3.29211L17.6568 8.96219Z" fill="currentColor"></path>
+            </svg>Topo</button>
+    </div>
+</div>
+ <section>
+    <p class="text-center"><i class="material-icons" data-aos="fade-down" data-aos-duration="900" data-aos-offset="0" data-aos-delay="3000" style="font-size: 54px;color: rgba(247,139,40,0.29);">keyboard_arrow_down</i></p>
+    <div class="container" style="overflow-x: auto;">
+        <h1 style="color: rgb(247,139,40);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-percent" style="position: relative;top: -3px;">
+                <path fill-rule="evenodd" d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path>
+            </svg>&nbsp;Pacotes com desconto<br><br></h1>
+        <div class="promotionsTable" style="border-radius: 8px !important;overflow: hidden;overflow-x: auto;">
+            <table class="table table-hover table-bordered">
+                <caption class="text-end">*Estava doido pra usar um async com o banco de dados, mas não deu tempo 🥲&nbsp;</caption>
+                <thead style="background-color: rgba(255,155,62,0.8);border-radius: 16px 0 0 16px!important;color: white;">
+                    <tr>
+                        <th>Destino</th>
+                        <th class="text-center">Incluso</th>
+                        <th class="text-center">Valor</th>
+                        <th class="text-end">Ação&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="d-table-cell" style="/*vertical-align: middle;*/"><strong>São Paulo</strong><br>São Paulo, BR</td>
+                        <td class="text-center d-flex destinesClassifications"><span data-bs-toggle="tooltip" data-bss-tooltip="" title="Passagem de ônibus"><i class="material-icons">directions_bus</i></span><span data-bs-toggle="tooltip" data-bss-tooltip="" class="active" title="Passagem de avião"><i class="material-icons">airplanemode_active</i></span><span data-bs-toggle="tooltip" data-bss-tooltip="" title="Passagem de navio"><i class="material-icons">directions_boat</i></span><span data-bs-toggle="tooltip" data-bss-tooltip="" class="active" title="Hospedagem em hotel"><i class="material-icons">hotel</i></span><span data-bs-toggle="tooltip" class="active" data-bss-tooltip="" title="Refeições inclusas"><i class="material-icons">local_dining</i></span></td>
+                        <td class="text-center"><span class="text-success"><strong>R$ 1.759,00</strong></span><br><span class="badge bg-light text-black-50"><span style="text-decoration: line-through;">R$ 1.999,00</span></span></td>
+                        <td class="text-end">ID: 1 - <a class="btn btn-primary jsRemoveSpan" type="link" href="/Compras/Create" style="background: rgb(6,184,45);border-color: rgb(6,184,45);">Comprar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+ <section/>

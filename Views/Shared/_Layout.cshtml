@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Traveller Co.</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/EstoqueTeste.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    @RenderBody()
+    <footer class="d-flex flex-column justify-content-lg-center align-items-lg-center">
+        <h1 class="text-center" style="color: #0db9dc;text-shadow: 0 0 0 white, 2px 2px 3px rgba(255,255,255,0.83);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="transform: rotateX(30deg) rotateZ(-40deg) scaleX(1.5) scaleY(1.5);color: #F78B28;">
+                <path d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z" fill="currentColor"></path>
+            </svg><br>Traveller Co.</h1>
+        <h6 style="color: rgba(144,179,190,0.31);">&nbsp;</h6><span id="rights" style="color: rgb(255,255,255);text-shadow: 1px 1px 2px rgba(0,0,0,0.58);position: relative;z-index: 1;">Criado com ❤️ e ☕ por <span style="color: rgb(148,148,148);text-shadow: none;font-weight: 400;position: absolute;top: -3px;left: 0;right: 2px;text-align: center;z-index: 0;opacity: 0;">e programado na base do desespero 😧&nbsp;&nbsp;</span><a href="https://github.com/Bryceed" style="color: white;font-weight: bold;position: relative;" target="_blank">Wellington N.</a></span>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

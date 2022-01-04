@@ -1,0 +1,65 @@
+﻿@model IEnumerable<WellN_M2_AgenciaViagens.Models.Suporte>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Tickets de Suporte</h1>
+
+<p>
+    <a asp-action="Create">Criar novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                E-mail
+            </th>
+            <th>
+                Motivo
+            </th>
+            <th>
+                Mensagem
+            </th>
+            <th>
+                Secure ID
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.motivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mensagem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Compras.SecID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TicketID">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.TicketID">Ver</a> |
+                <a asp-action="Delete" asp-route-id="@item.TicketID">Remover</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

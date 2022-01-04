@@ -1,0 +1,70 @@
+﻿
+@{
+
+}
+<nav class="navbar navbar-light navbar-expand-md sticky-top shadow-sm" data-aos="fade-down" data-aos-duration="100" data-aos-offset="0" style="margin: 12px;background: rgba(255,255,255,.7);border-radius: 8px;">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><strong>&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                    <path d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z" fill="currentColor"></path>
+                </svg><strong>&nbsp; &nbsp;Dashboard</strong></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" asp-controller="Dashboard" asp-action="Index">Principal</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Clientes" asp-action="Index">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Pacotes" asp-action="Index">Pacotes</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Compras" asp-action="Index">Compras</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Suportes" asp-action="Index">Suporte</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item" style="opacity: 0.44;color: initial;"><a class="nav-link" href="painel/index.html" style="/*color: red;*/"><strong>Deslogar</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" data-aos="fade-down" data-aos-duration="600" data-aos-offset="0" style="padding: 16px 0;">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card shadow" data-aos="fade-down-right" data-aos-offset="0" data-aos-delay="150" style="margin-bottom: 24px;">
+                    <div class="card-body" style="font-family: 'Alatsi';">
+                        <div style="width: 15vmin;height: 15vmin;display: block;margin: 0 auto;background: url(../assets/img/user-g05cb79af5_640.png?h=14d729cdbba9ae6d10d36be7ff8232e7) center center;background-size: cover;border-radius: 50%;margin-bottom: 12px;filter: hue-rotate(-196deg) saturate(1.3) drop-shadow(6px 5px 15px rgba(0,0,0,.1));"></div>
+                        <h4 class="text-center card-title">Olá, <strong>Admin</strong>!</h4>
+                        <h6 class="text-center text-text-muted card-subtitle mb-2">admin</h6>
+                        <p class="card-text" style="font-family: Arial;text-align: justify;"><em>"Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in..."</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow" style="margin-bottom: 24px;border: 0;display: flex;">
+                    <div class="card-body" data-aos="fade-down" data-aos-offset="0" data-aos-delay="450" style="/*display: flex;*//*flex-direction: column;*/">
+                        <h1>&nbsp;<strong>Visão Geral</strong></h1>
+                        <div class="row">
+                            <div class="col" data-aos="fade-down" data-aos-offset="0" data-aos-delay="400">
+                                <div class="card shadow" style="background: white;display: inherit;">
+                                    <h4 class="text-center" style="margin-top: 12px;">Clientes</h4>
+                                    <h1 class="text-center" style="margin-top: 12px;">?</h1>
+                                </div>
+                            </div>
+                            <div class="col" data-aos="fade-down" data-aos-offset="0" data-aos-delay="500">
+                                <div class="card shadow" style="background: white;display: inherit;">
+                                    <h4 class="text-center" style="margin-top: 12px;">Pacotes</h4>
+                                    <h1 class="text-center" style="margin-top: 12px;">?</h1>
+                                </div>
+                            </div>
+                            <div class="col" data-aos="fade-down" data-aos-offset="0" data-aos-delay="600">
+                                <div class="card shadow" style="background: white;display: inherit;">
+                                    <h4 class="text-center" style="margin-top: 12px;">Compras</h4>
+                                    <h1 class="text-center" style="margin-top: 12px;">?</h1>
+                                </div>
+                            </div>
+                            <div class="col" data-aos="fade-down" data-aos-offset="0" data-aos-delay="700">
+                                <div class="card shadow" style="background: white;display: inherit;">
+                                    <h4 class="text-center" style="margin-top: 12px;">Suportes</h4>
+                                    <h1 class="text-center" style="margin-top: 12px;">?</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center" data-aos="fade-up" data-aos-duration="1250" data-aos-offset="0" data-aos-delay="2650">Template criado por <strong>Wellington N.</strong></p>
+            </div>
+        </div>
+    </div>
