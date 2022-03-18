@@ -1,0 +1,53 @@
+.dropdown-menu {
+  /*background: rgb(230,230,230) !important;*/
+  /*box-shadow: 0 .2rem .1rem rgba(0,0,0,.4);*/
+}
+
+.menu-helper {
+  height: 64px;
+}
+
+nav .material-icons {
+  position: relative;
+  margin: 0 11px 0 4px;
+  zoom: 0.7;
+  left: -3px;
+  top: 3px;
+}
+
+.card {
+  background: #F8F9FA;
+  border: none;
+  box-shadow: 0 2px 2px 1px rgba(30,30,30,0.15);
+}
+
+.nav-link.active {
+  /*background: #F2F2F2 !important;*/
+  /*opacity: 1 !important;*/
+}
+
+.badge {
+  position: relative;
+  top: -1px;
+}
+
+.table-responsive {
+  vertical-align: middle;
+}
+
+th, td {
+  vertical-align: middle;
+}
+
+tbody .material-icons {
+  font-size: 15px !important;
+}
+
+input[type="text"] {
+  margin-bottom: 24px;
+}
+
+.btn-lg {
+  margin-bottom: 32px !important;
+}
+
