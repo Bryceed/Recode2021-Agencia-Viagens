@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Header.css';
 
-export default () => {
+export default props => {
     return (
         <>
             <div className="menu">
@@ -20,16 +20,16 @@ export default () => {
                             <div className="collapse navbar-collapse" id="navcol-1">
                                 <ul className="navbar-nav text-center mx-auto">
                                     <li className="nav-item">
-                                        <Link className="nav-link active" to="/">Home</Link>
+                                        <Link className={props.page === 'home' ? 'nav-link active' : 'nav-link'} to="/">Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/destinos">Destinos</Link>
+                                        <Link className={props.page === 'destinos' ? 'nav-link active' : 'nav-link'} to="/destinos">Destinos</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/promocoes">Promoções</Link>
+                                        <Link className={props.page === 'promo' ? 'nav-link active' : 'nav-link'} to="/promocoes">Promoções</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/contato">Contato</Link>
+                                        <Link className={props.page === 'contato' ? 'nav-link active' : 'nav-link'} to="/contato">Contato</Link>
                                     </li>
                                 </ul>
                             </div>

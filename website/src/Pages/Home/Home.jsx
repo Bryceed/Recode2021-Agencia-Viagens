@@ -10,7 +10,7 @@ import './Home.css';
 export default () => {
     return (
         <>
-            <Header></Header>
+            <Header page="home"></Header>
             <div class="d-flex d-xl-flex flex-column justify-content-end align-items-center justify-content-xl-end align-items-xl-center home1" >
                 <div class="image-background home2" ></div>
                 <h1 class="text-center text-white home3"><strong>Boas-vindas!</strong></h1>

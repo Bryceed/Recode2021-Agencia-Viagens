@@ -9,7 +9,7 @@ import './Contato.css';
 export default () => {
     return (
         <>  
-            <Header></Header>
+            <Header page="contato"></Header> 
             <div class="text-center contato1">
                 <div class="container contato2">
                     <h1 class="text-white">

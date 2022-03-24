@@ -8,7 +8,7 @@ import './Promocoes.css';
 export default () => {
     return (
         <>
-            <Header></Header>
+            <Header page="promo"></Header>
             <div class="text-center promo1">
                 <div class="container promo2">
                     <h1 class="text-white"><strong>Promoções</strong></h1>

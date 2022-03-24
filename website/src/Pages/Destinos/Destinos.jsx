@@ -9,7 +9,7 @@ import './Destinos.css';
 export default () => {
     return (
         <>
-            <Header></Header>
+            <Header page="destinos"></Header>
             <div class="text-center destinos1" >
                 <div class="container destinos2">
                     <h1 class="text-white"><strong>Destinos</strong></h1>
