@@ -1,0 +1,12 @@
+.promo1 {
+    background-color: #5c19b2;padding: 72px 0;margin-bottom: 72px;background: linear-gradient(140deg, rgb(140,79,218), rgb(218,28,142));
+}
+.promo2 {
+    width: "100%"
+}
+.promo3 {
+    margin-top: "20px"
+}
+.promo4 {
+    text-decoration: line-through;
+}

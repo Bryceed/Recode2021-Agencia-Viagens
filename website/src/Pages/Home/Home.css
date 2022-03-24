@@ -1,0 +1,36 @@
+.home1 {
+    width: 100vw;
+    height: calc(100vh - 128px);
+    background-color: rgba(70, 41, 154, 0.13);
+    position: relative;
+    text-shadow: none !important;
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0) 60%);
+}
+
+.home2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../../assets/img/airplane.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 62%;
+    background-position: 50% 25%;
+    z-index: -1;
+}
+
+.home3 {
+    margin: 6px;
+    font-size: 54px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.55);
+}
+
+.home4 {
+    font-size: 0rem;
+    vertical-align: middle;
+}
+
+.home5 {
+    font-size: 3.5rem;opacity: .2;
+}
