@@ -7,6 +7,7 @@ import recodepro1.traveller.entities.Tickets;
 import recodepro1.traveller.services.TicketsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,12 +30,14 @@ public class TicketsController {
         return ticketsService.findAll();
     }
 
+    @CrossOrigin(origins = "http://localhost:3000/")
     @PostMapping("/create")
     public ResponseEntity<Tickets> save(@RequestBody Tickets ticket) {
         ticketsService.save(ticket);
         return ResponseEntity.ok().body(ticket);
     }
 
+    @CrossOrigin(origins = "http://localhost:3000/")
     @PutMapping("/edit/{id}")
     public ResponseEntity<Tickets> edit(@PathVariable Long id, @RequestBody Tickets ticket) {
         var ticketkeep = ticketsService.edit(id, ticket);
@@ -43,6 +46,7 @@ public class TicketsController {
         return ResponseEntity.created(uri).body(ticketkeep);
     }
 
+    @CrossOrigin(origins = "http://localhost:3000/")
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         ticketsService.delete(id);
